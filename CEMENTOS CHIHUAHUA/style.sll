@@ -1,0 +1,274 @@
+<blockTableStyle id="TableSubtitulo">
+ <lineStyle kind="GRID" colorName="#000000" start="1,0" stop="2,0"/>
+</blockTableStyle>
+
+<blockTableStyle id="TableTitulo">
+  <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="-1,-1"/>
+  <blockFont name="Helvetica-Bold" size="20.0"  start="0,0" stop="-1,-1"/>
+  <blockAlignment value="CENTER"/>
+</blockTableStyle>
+
+<blockTableStyle id="tablaInfoGeneral">
+  <lineStyle kind="LINEBELOW" colorName="#000000" start="1,0" stop="1,3"/>
+  <blockAlignment value="RIGHT" start="0,0" stop="0,3"/>
+  <blockFont name="Helvetica-Bold"  start="0,0" stop="0,3"/>
+</blockTableStyle>
+
+<blockTableStyle id="tablaOtro">
+  <lineStyle kind="LINEBELOW" colorName="#000000" start="1,0" stop="1,0"/>
+</blockTableStyle>
+
+<blockTableStyle id="tituloTablaRespuesta">
+  <lineStyle kind="GRID" colorName="blue" start="1,0" stop="1,0"/>
+  <blockFont name="Helvetica-Bold"  start="1,0" stop="1,0"/>
+</blockTableStyle>
+
+<blockTableStyle id="tablaRespuesta">
+  <lineStyle kind="GRID" colorName="blue" start="1,0" stop="1,14"/>
+</blockTableStyle>
+
+<blockTableStyle id="tituloTablaRespuestaGreen">
+  <lineStyle kind="GRID" colorName="green" start="1,0" stop="1,0"/>
+  <blockFont name="Helvetica-Bold"  start="1,0" stop="1,0"/>
+</blockTableStyle>
+
+<blockTableStyle id="tablaRespuestaGreen">
+  <lineStyle kind="GRID" colorName="green" start="1,0" stop="1,14"/>
+</blockTableStyle>
+
+<blockTableStyle id="tablaMalaRegularBuena">
+  <lineStyle kind="GRID" colorName="#000000" start="1,1" stop="3,5"/>
+  <blockFont name="Helvetica-Bold" start="0,1" stop="0,5"/>
+</blockTableStyle>
+<blockTableStyle id="tablaDescripcion">
+  <lineStyle kind="LINEBELOW" colorName="#000000" start="0,1" stop="0,1"/>
+</blockTableStyle>
+
+<blockTableStyle id="TablaFirma">
+  <lineStyle kind="GRID" colorName="#000000" start="0,1" stop="0,1"/>
+</blockTableStyle>
+
+<blockTableStyle id="TablaDeFirmas">
+  <lineStyle kind="LINEBELOW" colorName="#000000" start="0,0" stop="0,0"/>
+  <lineStyle kind="LINEBELOW" colorName="#000000" start="2,0" stop="2,0"/>
+  <blockFont name="Helvetica-Bold"  start="0,2" stop="0,2"/>
+  <blockFont name="Helvetica-Bold"  start="2,2" stop="2,2"/>
+</blockTableStyle>
+<paraStyle name="firmantes" fontName="Helvetica" alignment="center" />
+<paraStyle name="folio" fontName="Helvetica-Bold" textColor="#CD0000"/>
+
+
+
+<blockTableStyle id="TableHeader">
+ <blockAlignment value="CENTER"/>
+ <blockAlignment value="LEFT" start="1,1" stop="-1,-1"/>
+ <blockValign value="MIDDLE"/>
+ <blockFont name="Helvetica" size="8.0"  start="0,0" stop="-1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,0"/>
+ <lineStyle kind="GRID" colorName="#000000" start="1,0" stop="1,1"/>
+</blockTableStyle>
+
+
+
+<blockTableStyle id="TableHeader3">
+ <blockAlignment value="CENTER"/>
+ <blockAlignment value="LEFT" start="1,1" stop="-1,-1"/>
+ <blockValign value="MIDDLE"/>
+ <blockFont name="Helvetica" size="8.0"  start="0,0" stop="-1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="2,0" stop="2,-1"/>
+</blockTableStyle>
+
+<blockTableStyle id="TableHeader2">
+ <blockAlignment value="CENTER"/>
+ <blockAlignment value="LEFT" start="1,1" stop="-1,-1"/>
+ <blockValign value="MIDDLE"/>
+ <blockFont name="Helvetica" size="8.0"  start="0,0" stop="-1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,-1"/>
+</blockTableStyle>
+
+
+<blockTableStyle id="separadaT">
+
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="1,0" stop="1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="2,0" stop="2,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="3,0" stop="3,-1"/>
+
+  <lineStyle kind="GRID" colorName="#000000" start="5,0" stop="5,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="6,0" stop="6,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="7,0" stop="7,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="8,0" stop="8,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="9,0" stop="9,-1"/>
+
+<blockSpan start = "8,0" stop = "9,0" />
+<blockSpan start = "8,1" stop = "9,1" />
+<blockSpan start = "8,2" stop = "9,2" />
+</blockTableStyle>
+
+<blockTableStyle id="separada11">
+
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="1,0" stop="1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="2,0" stop="2,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="3,0" stop="3,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="5,0" stop="5,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="6,0" stop="6,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="7,0" stop="7,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="8,0" stop="8,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="9,0" stop="9,-1"/>
+
+ <blockSpan start = "6,0" stop = "9,0" />
+ <blockSpan start = "6,1" stop = "9,1" />
+ <blockSpan start = "6,2" stop = "9,2" />
+ <blockSpan start = "6,3" stop = "9,3" /> 
+ <blockSpan start = "6,4" stop = "9,4" />
+ <blockSpan start = "1,1" stop = "3,1" />
+ <blockSpan start = "5,5" stop = "9,5" />
+</blockTableStyle>
+
+<blockTableStyle id="separada1">
+
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="1,0" stop="1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="2,0" stop="2,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="3,0" stop="3,-1"/>
+
+  <lineStyle kind="GRID" colorName="#000000" start="5,0" stop="5,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="6,0" stop="6,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="7,0" stop="7,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="8,0" stop="8,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="9,0" stop="9,-1"/>
+
+
+</blockTableStyle>
+
+<blockTableStyle id="separadaF">
+
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="1,0" stop="1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="2,0" stop="2,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="3,0" stop="3,-1"/>
+
+  <lineStyle kind="GRID" colorName="#000000" start="5,0" stop="5,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="6,0" stop="6,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="7,0" stop="7,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="8,0" stop="8,-1"/>
+  <lineStyle kind="GRID" colorName="#000000" start="9,0" stop="9,-1"/>
+
+   
+   
+   <blockSpan start = "1,0" stop = "3,1" />
+   <blockSpan start = "0,0" stop = "0,1" />
+
+
+   <blockSpan start = "6,0" stop = "9,0" />
+   <blockSpan start = "6,1" stop = "9,1" />
+</blockTableStyle>
+
+<blockTableStyle id="separada2">
+
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="1,0" stop="1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="2,0" stop="2,-1"/>
+</blockTableStyle>
+
+
+<blockTableStyle id="separada">
+
+  <lineStyle kind="GRID" colorName="#000000" start="4,0" stop="8,0"/>
+   <blockSpan start = "0,1" stop = "8,1" />
+   <blockSpan start = "7,0" stop = "8,0" />
+
+</blockTableStyle>
+
+
+
+<blockTableStyle id="encuesta">
+ <lineStyle kind="GRID" colorName="#000000" start="0,0" stop="0,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="1,0" stop="1,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="2,0" stop="2,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="3,0" stop="3,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="4,0" stop="4,-1"/>
+ <lineStyle kind="GRID" colorName="#000000" start="5,0" stop="5,-1"/>
+
+
+ <blockSpan start = "3,0" stop = "6,0" />
+ <blockSpan start = "3,2" stop = "6,2" />
+ <blockSpan start = "3,4" stop = "6,4" />
+ <blockSpan start = "3,6" stop = "6,6" />
+ <blockSpan start = "3,8" stop = "6,8" />
+
+
+
+ <blockSpan start = "0,0" stop = "2,0" />
+ <blockSpan start = "0,1" stop = "2,1" />
+ <blockSpan start = "0,2" stop = "0,2" />
+ <blockSpan start = "0,3" stop = "0,3" />
+ <blockSpan start = "0,4" stop = "0,4" />
+ <blockSpan start = "0,5" stop = "0,9" />
+
+
+
+
+
+ <blockSpan start = "1,2" stop = "2,2" />
+ <blockSpan start = "1,3" stop = "2,3" />
+ <blockSpan start = "1,4" stop = "2,4" />
+ <blockSpan start = "1,5" stop = "2,9" />
+
+
+
+
+
+
+
+
+  <blockSpan start = "3,1" stop = "4,1" />
+  <blockSpan start = "5,1" stop = "6,1" />
+  <blockSpan start = "3,3" stop = "4,3" />
+  <blockSpan start = "5,3" stop = "6,3" />
+  <blockSpan start = "3,5" stop = "4,5" />
+  <blockSpan start = "5,5" stop = "6,5" />
+  <blockSpan start = "3,7" stop = "4,7" />
+  <blockSpan start = "5,7" stop = "6,7" />
+  <blockSpan start = "3,9" stop = "4,9" />
+  <blockSpan start = "5,9" stop = "6,9" />
+
+
+<lineStyle kind="GRID" colorName="#000000" start="0,9" stop="6,9"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,8" stop="6,8"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,7" stop="6,7"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,6" stop="6,6"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,5" stop="6,5"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,4" stop="6,4"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,3" stop="6,3"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,2" stop="6,2"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,1" stop="6,1"/>
+<lineStyle kind="GRID" colorName="#000000" start="0,0" stop="6,0"/>
+
+
+</blockTableStyle>
+
+
+
+
+
+
+
+<paraStyle name="tdatos" fontName="Helvetica-Bold" fontSize="8" leading="9" />
+<paraStyle name="tdatos1" fontName="Helvetica-Bold" fontSize="7" leading="8" />
+<paraStyle name="datos" fontName="Helvetica" fontSize="7" leading="8" alignment="justify" />|1
+<paraStyle name="datos2" fontName="Helvetica" fontSize="6" leading="10" />
+<paraStyle name="datos1" fontName="Helvetica" fontSize="7" leading="8" />
+<paraStyle name="titulo3" fontName="Helvetica-Bold" fontSize="9" leading="10" alignment="center" textColor="#FFFAFA"/>
+<paraStyle name="sep2" fontName="Helvetica" fontSize="7" leading="8" alignment="center"/>
+<paraStyle name="sep22" fontName="Helvetica-Bold" fontSize="7" leading="8" alignment="center"/>
+<paraStyle name="sep23" fontName="Helvetica" fontSize="7" leading="8" alignment="center"/>
+<paraStyle name="sep" fontName="Helvetica" fontSize="7" leading="8" alignment="center" textColor="#FFFAFA"/>
+<paraStyle name="sep222" fontName="Helvetica-Bold" fontSize="7" leading="8" alignment="center" textColor="#FFFAFA"/>
+
+
+
+<paraStyle name="titulo" fontName="Helvetica-Bold" fontSize="13" alignment="center" />
+<paraStyle name="cab" fontName="Helvetica-Bold" fontSize="10" leading="12" />

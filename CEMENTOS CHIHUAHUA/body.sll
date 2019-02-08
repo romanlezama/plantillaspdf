@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+{% load PrintFields %}
+{% load set_var %}
+{% load custom_tags %}
+  <document filename="Calidad Inyeccion" xmlns:doc="http://namespaces.zope.org/rml/doc">
+  <pageInfo pageSize="(200mm,260mm)" doc:example="" />
+  <template  title="Calidad Inyeccion" author="LinkaForm">
+    <pageTemplate id="first">
+      <frame id="first" x1="0.5cm" y1="4.5cm" width="200mm" height="250mm"/>
+      <pageGraphics>
+        <setFont name="Helvetica" size="7.5"/>
+        <setFont name="Helvetica" size="8"/>
+          <!-- Cabecera de documento -->
+          {% Header company_logo parent user form Template meta %}
+          <!-- Pie del documento -->
+          <drawString x="1.5cm" y="1.5cm"> </drawString> 
+          <drawRightString x="20cm" y="1.5cm"></drawRightString> 
+          <drawString x="5.5cm" y="1.3cm"></drawString> 
+          {% Footer user form Template meta %}
+      </pageGraphics>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    {% autoescape on %}
+      {{ Template.style|safe }}
+    {% endautoescape %}
+  </stylesheet>
+  <story>
+    <blockTable colWidths="18cm" style="TableTitulo">
+      <tr>
+        <td bottomPadding="10" topPadding="5">
+          <para style="titulo">Formato de Entrada</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="4.5cm,9.6cm,3.9cm" style="TableSubtitulo">
+      <tr>
+        <td></td>
+        <td align="center" fontName="Helvetica-Bold">Mantenimiento Concretos Equipó Móvil Revolvedoras</td>
+        <td>
+          <blockTable colWidths="1cm,2.8cm">
+            <tr>
+              <td>Folio: </td>
+              <td><para style="folio">{{ meta.folio }}</para></td>
+            </tr>
+          </blockTable>
+        </td>
+      </tr>
+    </blockTable>
+    <spacer length=".1cm"/>
+    <blockTable colWidths="9cm,9cm">
+      <tr>
+        <td>
+          <blockTable colWidths="4.5cm,4.5cm" style="tablaInfoGeneral">
+            <tr>
+              <td>Número Eco. </td>
+              <td><para>{{answers.5c5b66b6b43fdd06d69f96d1}}</para></td>
+            </tr>
+            <tr>
+              <td>Operador </td>
+              <td><para>{{answers.5c5b66b6b43fdd06d69f96d2}}</para></td>
+            </tr>
+            <tr>
+              <td>Planta </td>
+              <td><para>{{answers.5c5b66b6b43fdd06d69f96d3}}</para></td>
+            </tr>
+            <tr>
+              <td>Horometro </td>
+              <td><para>{{answers.5c5b66b6b43fdd06d69f96d4}}</para></td>
+            </tr>
+          </blockTable>
+        </td>
+        <td>
+          <blockTable colWidths="4.5cm,4.5cm" style="tablaInfoGeneral">
+            <tr>
+              <td>Kilometraje </td>
+              <td><para>{{answers.5c5b66b6b43fdd06d69f96d5}}</para></td>
+            </tr>
+            <tr>
+              <td>Día </td>
+              <td><para>{{answers.5c5b66b6b43fdd06d69f96d6}}</para></td>
+            </tr>
+            <tr>
+              <td>Hora de entrada: </td>
+              <td><para>{{answers.5c5b66b6b43fdd06d69f96d7}}</para></td>
+            </tr>
+            <tr>
+              <td>Entra a: </td>
+              <td><para>{{answers.5c5b66b6b43fdd06d69f96d8}}</para></td>
+            </tr>
+          </blockTable>
+        </td>
+      </tr>
+    </blockTable>
+    <spacer length=".1cm"/>
+    <blockTable colWidths="9cm,9cm">
+      <tr>
+        <td>
+          <blockTable colWidths="1cm,8cm" style="tituloTablaRespuesta">
+            <tr>
+              <td></td>
+              <td align="center">Equipo Aliado</td>
+            </tr>
+          </blockTable>
+          <blockTable colWidths="1cm,.5cm,7.5cm" style="tablaRespuesta">
+            <tr><td>1.-</td><td align="center">{% if 'Bomba Eaton' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Bomba Eaton</td></tr>
+            <tr><td>2.-</td><td align="center">{% if 'Faldones' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Faldones</td></tr>
+            <tr><td>3.-</td><td align="center">{% if 'Molote' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Molote</td></tr>
+            <tr><td>4.-</td><td align="center">{% if 'Mangueras/ Conexiones Eaton' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Mangueras/ Conexiones Eaton</td></tr>
+            <tr><td>5.-</td><td align="center">{% if 'Tanque Diésel' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Tanque Diésel</td></tr>
+            <tr><td>6.-</td><td align="center">{% if 'Sistema de Descarga (canalón, torre, control)' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Sistema de Descarga (canalón, torre, control)</td></tr>
+            <tr><td>7.-</td><td align="center">{% if 'Fisura de Olla' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Fisura de Olla</td></tr>
+            <tr><td>8.-</td><td align="center">{% if 'Tanque de Agua / cincho tanque' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Tanque de Agua / cincho tanque</td></tr>
+            <tr><td>9.-</td><td align="center">{% if 'Válvula de Agua' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Válvula de Agua</td></tr>
+            <tr><td>10.-</td><td align="center">{% if 'Pistón, marcha, manguera canalón' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Pistón, marcha, manguera canalón</td></tr>
+            <tr><td>11.-</td><td align="center">{% if 'Mangueras/ Conexiones agua' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Mangueras/ Conexiones agua</td></tr>
+            <tr><td>12.-</td><td align="center">{% if 'Rodillos de olla' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Rodillos de olla</td></tr>
+            <tr><td>13.-</td><td align="center">{% if 'Reparación olla limpieza' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Reparación olla limpieza</td></tr>
+            <tr><td>14.-</td><td align="center">{% if 'Tornillería de molote/ chasis' in answers.5c5b66b6b43fdd06d69f96d9 %} X {% endif %}</td><td>Tornillería de molote/ chasis</td></tr>
+            <tr>
+              <td>15.-</td>
+              <td align="center">{% if answers.5c5b6b50f851c201f0fa3885 %} X {% endif %}</td>
+              <td>
+                <blockTable colWidths="1.5cm,5cm" style="tablaOtro">
+                  <tr><td>Otro: </td><td><para>{{answers.5c5b6b50f851c201f0fa3885}}</para></td></tr>
+                </blockTable>
+              </td>
+            </tr>
+          </blockTable>
+        </td>
+        <td>
+          <blockTable colWidths="1cm,8cm" style="tituloTablaRespuestaGreen">
+            <tr>
+              <td></td>
+              <td align="center">Tracto camión/ Exteriores Interiores/ Luces</td>
+            </tr>
+          </blockTable>
+          <blockTable colWidths="1cm,.5cm,7.5cm" style="tablaRespuestaGreen">
+              <tr><td>1.-</td><td align="center">{% if 'Frenos' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Frenos</td></tr>
+              <tr><td>2.-</td><td align="center">{% if 'Motor' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Motor</td></tr>
+              <tr><td>3.-</td><td align="center">{% if 'Luces Delanteras/ luces traseras' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Luces Delanteras/ luces traseras</td></tr>
+              <tr><td>4.-</td><td align="center">{% if 'chasis, muelles mofle' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>chasis, muelles mofle</td></tr>
+              <tr><td>5.-</td><td align="center">{% if 'Sistema anti-derrame' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Sistema anti-derrame</td></tr>
+              <tr><td>6.-</td><td align="center">{% if 'Llanta No.' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Llanta No.</td></tr>
+              <tr><td>7.-</td><td align="center">{% if 'Puertas/ chapas' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Puertas/ chapas</td></tr>
+              <tr><td>8.-</td><td align="center">{% if 'Interiores, cristales, espejos' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Interiores, cristales, espejos</td></tr>
+              <tr><td>9.-</td><td align="center">{% if 'Trasmisión' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Trasmisión</td></tr>
+              <tr><td>10.-</td><td align="center">{% if 'Rines, birlos y tambores' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Rines, birlos y tambores</td></tr>
+              <tr><td>11.-</td><td align="center">{% if 'Sistema neumático' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Sistema neumático</td></tr>
+              <tr><td>12.-</td><td align="center">{% if 'Crucetas' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Crucetas</td></tr>
+              <tr><td>13.-</td><td align="center">{% if 'Sistema Encendido' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Sistema Encendido</td></tr>
+              <tr><td>14.-</td><td align="center">{% if 'Porta galones' in answers.5c5b6b50f851c201f0fa3886 %} X {% endif %}</td><td>Porta galones</td></tr>
+            
+            <tr>
+              <td>15.-</td>
+              <td align="center">{% if answers.5c5b6b50f851c201f0fa3887 %} X {% endif %}</td>
+              <td>
+                <blockTable colWidths="1.5cm,5cm" style="tablaOtro">
+                  <tr><td>Otro: </td><td><para>{{answers.5c5b6b50f851c201f0fa3887}}</para></td></tr>
+                </blockTable>
+              </td>
+            </tr>
+          </blockTable>
+        </td>
+      </tr>
+    </blockTable>
+    <spacer length=".1cm"/>
+    <blockTable colWidths="9cm,9cm">
+      <tr>
+        <td>
+          <blockTable colWidths="9cm" style="TablaFirma">
+            <tr><td fontName="Helvetica-Bold">Condiciones de Entrada:</td></tr>
+            <tr>
+              <td topPadding="1.5cm">
+                {% if answers.5c5cb6dc295322000fdd5388 %}
+                  <imageAndFlowables imageName="{{answers.5c5cb6dc295322000fdd5388.file_url}}"  imageWidth="0" imageHeight="0" imageSide="left" imageLeftPadding="0cm" />
+                {% endif %}
+              </td>
+            </tr>
+          </blockTable>
+        </td>
+        <td vAlign="top">
+          <blockTable colWidths="3.9cm,1.7cm,1.7cm,1.7cm" style="tablaMalaRegularBuena">
+            <tr>
+              <td></td>
+              <td align="center">Mala</td>
+              <td align="center">Regular</td>
+              <td align="center">Buena</td>
+            </tr>
+            <tr>
+              <td>Limpieza Olla</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51454 == 'Mala' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51454 == 'Regular' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51454 == 'Buena' %} X {% endif %}</td>
+            </tr>
+            <tr>
+              <td>Limpieza Interior</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51455 == 'Mala' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51455 == 'Regular' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51455 == 'Buena' %} X {% endif %}</td>
+            </tr>
+            <tr>
+              <td>Limpieza Exterior</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51456 == 'Mala' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51456 == 'Regular' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51456 == 'Buena' %} X {% endif %}</td>
+            </tr>
+            <tr>
+              <td>Pintura Rines/ defe</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51457 == 'Mala' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51457 == 'Regular' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51457 == 'Buena' %} X {% endif %}</td>
+            </tr>
+            <tr>
+              <td>Canalón/ Torre</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51458 == 'Mala' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51458 == 'Regular' %} X {% endif %}</td>
+              <td align="center">{% if answers.5c5b6b4db43fdd2287a51458 == 'Buena' %} X {% endif %}</td>
+            </tr>
+          </blockTable>
+          <blockTable colWidths="4.5cm,4.5cm">
+            <tr>
+              <td fontName="Helvetica-Bold">Nivel de Combustible: </td>
+              <td><para>{{answers.5c5b6b4db43fdd2287a51459}}</para></td>
+            </tr>
+          </blockTable>
+        </td>
+      </tr>
+    </blockTable>
+    <spacer length=".1cm"/>
+    <blockTable colWidths="18cm" style="tablaDescripcion">
+      <tr><td bottomPadding="8" fontName="Helvetica-Bold">Descripción:</td></tr>
+      <tr><td><para>{{answers.5c5b6b4db43fdd2287a5145a}}</para></td></tr>
+    </blockTable>
+    <spacer length=".1cm"/>
+    <blockTable colWidths="8cm,2cm,8cm" style="TablaDeFirmas">
+      <tr>
+        <td align="center">
+          {% if answers.5c5cbf432953220010f891fd %}
+            <imageAndFlowables imageName="{{answers.5c5cbf432953220010f891fd.file_url}}"  imageWidth="0" imageHeight="0" imageSide="left" imageLeftPadding="0cm" />
+          {% endif %}
+        </td>
+        <td></td>
+        <td align="center">
+          {% if answers.5c5cbf432953220010f891ff %}
+            <imageAndFlowables imageName="{{answers.5c5cbf432953220010f891ff.file_url}}"  imageWidth="0" imageHeight="0" imageSide="left" imageLeftPadding="0cm" />
+          {% endif %}
+        </td>
+      </tr>
+      <tr>
+        <td align="center"><para style="firmantes">{{answers.5c5cbf432953220010f891fc}}</para></td>
+        <td></td>
+        <td align="center"><para style="firmantes">{{answers.5c5cbf432953220010f891fe}}</para></td>
+      </tr>
+      <tr>
+        <td align="center">Operador</td>
+        <td></td>
+        <td align="center">Persona que autoriza</td>
+      </tr>
+    </blockTable>
+    {% autoescape on %}
+      {{ Template.style|safe }}
+    {% endautoescape %}
+  </story>
+</document>
