@@ -164,18 +164,20 @@
         </td>
       </tr>
     </blockTable>
-    <spacer length=".1cm"/>
     <blockTable colWidths="9cm,9cm">
       <tr>
         <td>
           <blockTable colWidths="9cm" style="TablaFirma">
             <tr><td fontName="Helvetica-Bold">Condiciones de Entrada:</td></tr>
             <tr>
-              <td topPadding="1.5cm">
-                {% if answers.5c5cb6dc295322000fdd5388 %}
-                  <imageAndFlowables imageName="{{answers.5c5cb6dc295322000fdd5388.file_url}}"  imageWidth="0" imageHeight="0" imageSide="left" imageLeftPadding="0cm" />
-                {% endif %}
-              </td>
+              {% if answers.5c5cb6dc295322000fdd5388 %}
+                <td>
+                    <imageAndFlowables imageName="{{answers.5c5cb6dc295322000fdd5388.file_url}}"  imageWidth="0" imageSide="left" imageLeftPadding="0cm" imageHeight="9.5cm" />
+                </td>
+              {% else %}
+                <td topPadding="3cm"></td>
+              {% endif %}
+
             </tr>
           </blockTable>
         </td>
@@ -227,12 +229,10 @@
         </td>
       </tr>
     </blockTable>
-    <spacer length=".1cm"/>
     <blockTable colWidths="18cm" style="tablaDescripcion">
       <tr><td bottomPadding="8" fontName="Helvetica-Bold">Descripción:</td></tr>
       <tr><td><para>{{answers.5c5b6b4db43fdd2287a5145a}}</para></td></tr>
     </blockTable>
-    <spacer length=".1cm"/>
     <blockTable colWidths="8cm,2cm,8cm" style="TablaDeFirmas">
       <tr>
         <td align="center">
