@@ -166,13 +166,14 @@
     </blockTable>
     <blockTable colWidths="9cm,9cm">
       <tr>
-        <td>
+        <td vAlign="top">
           <blockTable colWidths="9cm" style="TablaFirma">
             <tr><td fontName="Helvetica-Bold">Condiciones de Entrada:</td></tr>
             <tr>
               {% if answers.5c5cb6dc295322000fdd5388 %}
-                <td>
-                    <imageAndFlowables imageName="{{answers.5c5cb6dc295322000fdd5388.file_url}}"  imageWidth="0" imageSide="left" imageLeftPadding="0cm" imageHeight="9.5cm" />
+                <td align="center">
+                    
+                    <img src="{{answers.5c5cb6dc295322000fdd5388.file_url}}" height="3.5cm" width="4.66cm" />
                 </td>
               {% else %}
                 <td topPadding="3cm"></td>
@@ -237,13 +238,15 @@
       <tr>
         <td align="center">
           {% if answers.5c5cbf432953220010f891fd %}
-            <imageAndFlowables imageName="{{answers.5c5cbf432953220010f891fd.file_url}}"  imageWidth="0" imageHeight="0" imageSide="left" imageLeftPadding="0cm" />
+            <img src="{{answers.5c5cbf432953220010f891fd.file_url}}" height="3cm" width="4cm"/>
+            <!--<imageAndFlowables imageName="{{answers.5c5cbf432953220010f891fd.file_url}}"  imageWidth="4cm" imageHeight="3cm" imageSide="left" imageLeftPadding="0cm" />-->
           {% endif %}
         </td>
         <td></td>
         <td align="center">
           {% if answers.5c5cbf432953220010f891ff %}
-            <imageAndFlowables imageName="{{answers.5c5cbf432953220010f891ff.file_url}}"  imageWidth="0" imageHeight="0" imageSide="left" imageLeftPadding="0cm" />
+            <img src="{{answers.5c5cbf432953220010f891ff.file_url}}" height="3cm" width="4cm"/>
+            <!--<imageAndFlowables imageName="{{answers.5c5cbf432953220010f891ff.file_url}}"  imageWidth="4cm" imageHeight="3cm" imageSide="left" imageLeftPadding="0cm" />-->
           {% endif %}
         </td>
       </tr>
