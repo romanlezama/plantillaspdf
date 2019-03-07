@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pruebas Forma Pública</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#sendForm").click(function(){
+				$.ajax({
+					url: 'https://app.linkaform.com/api/infosync/form_answer/',
+					dataType: 'json',
+					type: 'POST',
+					//contentType: 'application/json',
+					data: {
+					  "form_id": 29024,
+					  "geolocation": [],
+					  "start_timestamp": 1551916107.082,
+					  "end_timestamp": 1551916355.735,
+					  "answers": {
+					    "5af31099f851c22d1a62823f": 20,
+					    "5af30d39f851c22d1d5a6192": "Desde HTML",
+					    "5af30f68f851c22d1c348e4a": "masculino"
+					  },
+					  "properties": {
+					    "device_properties": {
+					      "system": "",
+					      "vendor": "",
+					      "userAgent": "",
+					      "publicIp": "",
+					      "localIp": ""
+					    }
+					  },
+					  "geolocation_method": {
+					    "method": "HTML5",
+					    "accuracy": 0
+					  },
+					  "folio": null
+					},
+					success: function(data){
+						console.log(data);
+					}
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="sendForm">Enviar Forma</button>
+</body>
+</html>
