@@ -4,48 +4,100 @@
 	<title>Pruebas Forma Pública</title>
 	<meta charset="utf-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#sendForm").click(function(){
-				$.ajax({
-					url: 'https://app.linkaform.com/api/infosync/form_answer/',
-					dataType: 'json',
-					type: 'POST',
-					//contentType: 'application/json',
-					data: {
-					  "form_id": 29024,
-					  "geolocation": [],
-					  "start_timestamp": 1551916107.082,
-					  "end_timestamp": 1551916355.735,
-					  "answers": {
-					    "5af31099f851c22d1a62823f": 20,
-					    "5af30d39f851c22d1d5a6192": "Desde HTML",
-					    "5af30f68f851c22d1c348e4a": "masculino"
-					  },
-					  "properties": {
-					    "device_properties": {
-					      "system": "",
-					      "vendor": "",
-					      "userAgent": "",
-					      "publicIp": "",
-					      "localIp": ""
-					    }
-					  },
-					  "geolocation_method": {
-					    "method": "HTML5",
-					    "accuracy": 0
-					  },
-					  "folio": null
-					},
-					success: function(data){
-						console.log(data);
-					}
-				});
-			});
-		});
-	</script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<style type="text/css">
+		body{
+			font-family: "Montserrat",sant-serif;
+		}
+		p,li{
+			line-height: 1.9;
+			font-size: 13px;
+		}
+		h4{
+			margin-top: 1.5em;
+		}
+		small{
+			font-weight: bold;
+		}
+	</style>
 </head>
 <body>
-	<button id="sendForm">Enviar Forma</button>
+	<div class="container">
+		<h3>Hi Antonio,</h3>
+		<p>As the point of contact on your HubSpot account, we wanted you to be the first to know about an upcoming change that will affect your team.</p>
+		<p>Your HubSpot records — contacts, companies, deals, and tickets — are evolving. The changes are based on customer feedback and extensive testing. You'll easily access all the context you need for customer interactions with the new layout and functionality.</p>
+		<h4>What’s improved?</h4>
+		<ul>
+			<li>See more above the fold, so your team can work more efficiently.</li>
+			<li>Access preview of an associated record without leaving the record you're on, to save tabs and time.</li>
+			<li>Contact your customer or prospect from anywhere on the record.</li>
+		</ul>
+		<p>Get the full rundown of the new design <a href="http://qa.linkaform.com/" target="_blank">here</a>.</p>
+		<h4>How will my team access this?</h4>
+		<p>Your account has access to the new design via a “Beta” button in the bottom-left of the existing record. For the moment, members of your team can opt in or out of the new design as they’d like.</p>
+		<h4>What happens next?</h4>
+		<p>On February 21, 2019, the new design will become the default record. Your team will still be able to opt back into the current design.</p>
+		<p>From April 1, 2019, access to the current record will be removed, only the new design will be available.</p>
+		<h4>Is any action required?</h4>
+		<p>No. However, if you’d like to control when and how your users moves over to the new design (rather than having team members switch at different times), we’ve created a button for all admins in your account to move every user to the new design at once. You can access this option by clicking on the beta button in the bottom-left of any record.</p>
+		<p>Questions? Reach out to your HubSpot point of contact.</p>
+		<p>We're sending you this update as we wanted to ensure you were prepared for questions from your team, and take proactive action if needed. Was it useful?</p>
+		<center>
+			<a href="javascript:sendInfo('bueno')"><img src="https://b2.linkaform.com/file/app-linkaform/public-client-126/32727/599cb924b43fdd4817d99016/07a6485a9e1155fa63b013e3ccef95e9d1677e45.png" width="60" height="60"></a>
+			<a href="javascript:sendInfo('regular')"><img src="https://b2.linkaform.com/file/app-linkaform/public-client-126/32727/599cb924b43fdd4817d99016/0ebd7ae3ca9341ba4409effdddd73cd3e21d9550.png" width="64" height="64"></a>
+			<a href="javascript:sendInfo('malo')"><img src="https://b2.linkaform.com/file/app-linkaform/public-client-126/32727/599cb924b43fdd4817d99016/6d651279f321743ef3fe5c93c1cf9b9c49157f55.png" width="64" height="64"></a>
+		</center>
+		<center>
+			<small>Saludos y esperamos sus comentarios, dudas o sugerencia en soporte@linkaform.com o vía whatsapp en el 81 2513 2805.</small>
+		</center>
+	</div>
 </body>
+<script>
+	function sendInfo(evaluacion){
+		console.log(evaluacion);
+		var fecha = new Date();
+		var fechaFormat = fecha.getFullYear() + "-" + (fecha.getMonth()+1) + "-" + fecha.getDate();
+		$.ajax({
+			//url: 'https://app.linkaform.com/api/infosync/form_answer/',
+			url: 'http://qa.linkaform.com/api/infosync/form_answer/',
+			dataType: 'json',
+			type: 'POST',
+			contentType: 'application/json',
+			data: JSON.stringify({
+				//"form_id": 40642,
+				"form_id": 39674,
+				"geolocation": [],
+				"start_timestamp": new Date().getTime() / 1000,
+				"end_timestamp": new Date().getTime() / 1000,
+				"answers": {
+					"5c81541ab43fdd43957bc73c": "Antonio",
+					"5c81541ab43fdd43957bc73d": fechaFormat,
+					"5c81541ab43fdd43957bc73e": evaluacion
+				},
+				"properties": {
+					"device_properties": {
+						"system": "",
+						"vendor": "",
+						"userAgent": "",
+						"publicIp": "",
+						"localIp": ""
+					}
+				},
+				"geolocation_method": {
+				"method": "HTML5",
+				"accuracy": 0
+				},
+				"folio": null
+			}),
+			success: function(data){
+				console.log(data);
+			}
+		});
+	}
+</script>
 </html>
